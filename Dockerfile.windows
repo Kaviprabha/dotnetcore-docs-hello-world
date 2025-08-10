@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'make'
+                sh 'printenv'
             }
         }
         stage('Test') { 
